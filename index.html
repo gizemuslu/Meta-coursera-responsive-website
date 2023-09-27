@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Little Lemon</title>
+
+    </head>
+    <body >
+       
+        <h1>Our Menu</h1>
+        <h2>Falafel</h2>
+        <p>chickpea,herbs,spicies.</p>
+        <img src="falafel.jpg"width="240" height="135" alt="A Falafel">
+        <!-- src:source, alt:alter -->
+        <h2>Pasta Salad</h2>
+        <p>Lettuce, vegetables, mozzarella. </p>
+        <img src="pasta salad.jpeg" width="240" height="135" alt="A Pasta Salad">
+        <br><a href="location.html">Our Location</a>
+        <style>
+            table,th,td {
+                border: 1px solid black;
+                border-collapse: collapse;
+
+            }
+        </style>
+        <table>
+            <!--tr:table row,td:table date,th:table header-->
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Falafel</td>
+                <td> $10.00</td>
+
+            </tr>
+            <tr>
+                <td>Pasta Salad </td>
+                <td>$12.00 </td>
+
+            </tr>
+            <!--Form -->
+            <br><form action="/registration" method="POST">
+                <label for ="username">Username: </label><br>
+                <input type="text" name="username">
+                <br><label for=""password>Password:</label><br>
+                <input type="password"/>
+                <input type="submit"/>
+
+
+            </form>
+            <!-- Checkbox-->
+            <br><input type="checkbox"name="falafel" value="Falafel"/>
+            <!--Drop down list-->
+            <select name="food"> 
+              <option value="wrap up">wrap up </option>
+              <option value="on plate">on plate </option>
+            </select>
+            <label for "falafel"> I want a falafel.</label><br>
+            <input type="checkbox" name "pasta salad" value="Pasta Salad"/>
+            <label for "pasta salad">I want a pasta salad.</label><br>
+            <!--Radio buttons-->
+               <br><input type="radio" name="hot" value="hot"/>
+                   <label for="hot">I want hot peppers.</label>
+                   <input type="radio" name="not hot" value="not hot"/>
+                   <label for="not hot">I don't want hot peppers.</label>          
+         </table>
+          
+
+
+
+    </body>
+
+</html>
